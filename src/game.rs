@@ -15,7 +15,7 @@ const STEM_COLOR: Color = [0.60, 0.39, 0.22, 1.0];
 const LEAF_COLOR: Color = [0.34, 0.80, 0.17, 1.0];
 const GAME_OVER_COLOR: Color = [0.9, 0.0, 0.0, 0.5];
 
-const MOVING_PERIOD: f64 = 0.5;
+const MOVING_PERIOD: f64 = 0.1;
 const RESTART_TIME: f64 = 1.0;
 
 pub struct Game {
