@@ -6,4 +6,4 @@ authors = ["Joshua Escamilla <joshua.escamilla@selu.edu>"]
 
 [dependencies]
 piston_window = "=0.132.0"
-rand = "=0.9.4"
+rand = "0.10"

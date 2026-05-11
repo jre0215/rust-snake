@@ -1,6 +1,5 @@
 use piston_window::types::Color;
 use piston_window::{Context, G2d, Key, clear, rectangle};
-use rand::{Rng, rng};
 
 use crate::draw::{BLOCK_SIZE, draw_rectangle};
 use crate::snake::{Direction, Snake};
@@ -315,11 +314,9 @@ impl Game {
     }
 
     pub fn add_apple(&mut self) {
-        let mut rng = rng();
-
         let (apple_x, apple_y) = loop {
-            let x: u32 = rng.random_range(0..self.width);
-            let y: u32 = rng.random_range(0..self.height);
+            let x: u32 = rand::random_range(0..self.width);
+            let y: u32 = rand::random_range(0..self.height);
             if !self.overlaps_border(x, y) && !self.snake.overlaps_tail(x, y) {
                 break (x, y);
             }
