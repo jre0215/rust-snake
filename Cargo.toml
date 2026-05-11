@@ -1,8 +1,9 @@
 [package]
 name = "snake"
 version = "0.1.0"
+edition = "2015"
 authors = ["Joshua Escamilla <joshua.escamilla@selu.edu>"]
 
 [dependencies]
-piston_window = "0.80.0"
-rand = "0.5.5"
+piston_window = "=0.132.0"
+rand = "=0.9.4"

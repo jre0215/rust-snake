@@ -4,7 +4,7 @@ extern crate rand;
 use piston_window::{Button, PistonWindow, PressEvent, UpdateEvent, WindowSettings};
 
 use draw::BLOCK_SIZE;
-use game::{Game, GAME_HEIGHT, GAME_WIDTH};
+use game::{GAME_HEIGHT, GAME_WIDTH, Game};
 
 mod draw;
 mod game;
@@ -23,7 +23,7 @@ fn main() {
             game.key_pressed(key);
         }
 
-        window.draw_2d(&event, |context, g2d| {
+        window.draw_2d(&event, |context, g2d, _| {
             game.draw(&context, g2d);
         });
 
