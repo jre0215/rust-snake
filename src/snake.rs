@@ -3,9 +3,9 @@ use std::f64::consts::PI;
 
 use piston_window::math::Matrix2d;
 use piston_window::types::Color;
-use piston_window::{rectangle, Context, G2d, Transformed};
+use piston_window::{Context, G2d, Transformed, rectangle};
 
-use draw::{draw_block, Block, BLOCK_SIZE};
+use crate::draw::{BLOCK_SIZE, Block, draw_block};
 
 const SNAKE_COLOR: Color = [0.34, 0.80, 0.17, 1.0];
 const EYE_COLOR: Color = [0.0, 0.0, 0.0, 1.0];

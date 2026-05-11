@@ -1,5 +1,5 @@
 use piston_window::types::Color;
-use piston_window::{rectangle, Context, G2d};
+use piston_window::{Context, G2d, rectangle};
 
 pub const BLOCK_SIZE: u32 = 30;
 

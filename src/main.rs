@@ -3,8 +3,8 @@ extern crate rand;
 
 use piston_window::{Button, PistonWindow, PressEvent, UpdateEvent, WindowSettings};
 
-use draw::BLOCK_SIZE;
-use game::{GAME_HEIGHT, GAME_WIDTH, Game};
+use crate::draw::BLOCK_SIZE;
+use crate::game::{GAME_HEIGHT, GAME_WIDTH, Game};
 
 mod draw;
 mod game;

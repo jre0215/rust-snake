@@ -2,8 +2,8 @@ use piston_window::types::Color;
 use piston_window::{Context, G2d, Key, clear, rectangle};
 use rand::{Rng, rng};
 
-use draw::{BLOCK_SIZE, draw_rectangle};
-use snake::{Direction, Snake};
+use crate::draw::{BLOCK_SIZE, draw_rectangle};
+use crate::snake::{Direction, Snake};
 
 pub const GAME_WIDTH: u32 = 19;
 pub const GAME_HEIGHT: u32 = 19;
